@@ -39,6 +39,7 @@ namespace BeginningCSharpAndDotNET_16_4_QueryPerson
             var queryAge =
                 from p in people
                 where p.Age >= 21
+                orderby p.Age
                 select p;
 
             foreach (var age in queryAge)
